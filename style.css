@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+    background-color: #e1e1e1;
+}
+
+.container {
+    width: 100%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-panel {
+    height: 40px;
+    width: 100%;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.nav-panel>h2 {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/tablemountain.jpg');
+    background-size: cover;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.menu {
+    width: 120px;
+    height: 200px;
+    padding: 20px;
+    margin: 39px 0 0 0;
+    background-color: #fff;
+    border-radius: 0.1em;
+    box-shadow: 1px 1px 1px black;
+    position: absolute;
+    transform: translateY(-500px);
+    transform-origin: top;
+    transition: 500ms ease-in-out;
+}
+
+.menuButton {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin: 10px 10px;
+    cursor: pointer;
+    background-image: url('images/list-of-files.png');
+    background-size: cover;
+}
+
+#myCity, #myLanguage, #myHistoricPlaces, #Github {
+    margin-top: 10px;
+    margin-left: 0px;
+    padding: 5px 5px 5px 0px;
+    background-color: rgba(76, 144, 177, 0.7);
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 1px 1px 1px grey;
+    left: 0px;
+    transition: 300ms ease-in-out;
+}
+
+#myCity>a, #myLanguage>a, #myHistoricPlaces>a, #Github>a {
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+#myCity:hover, #myLanguage:hover, #myHistoricPlaces:hover, #Github:hover {
+    background-color: rgba(76, 144, 500, 0.9);
+    box-shadow: 1px 1px 1px black;
+  }
+
+#myCity:active, #myLanguage:active, #myHistoricPlaces:active, #Github:active {
+    box-shadow: 0px 0px 0px  0px white;
+    left: 4px;
+}
+
+.isOpen {
+    transform: translateY(0px);
+}
+
+h3 {
+    text-align: center;
+    font-size: 16pt;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: sans-serif;
+    padding-top: 20px;
+}
+
+
+/*first content*/
+
+.contentOne {
+    background-color: #fff;
+    margin: 100px 200px;
+    box-shadow: 1px 1px 1px black;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 900px) {
+  .contentOne {
+      background-color: #fff;
+      margin: 0px;
+      box-shadow: 1px 1px 1px black;
+      height: 100%;
+      padding-bottom: 200px;
+      transition: 1s ease-in-out;
+  }
+}
+
+.countryPhotoIMG {
+    margin: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.countryPhotoIMG>img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    animation: bottomLine 3s ease-in-out infinite;
+}
+
+@keyframes bottomLine {
+    0% {
+        box-shadow: 0 2px 0 steelblue;
+    }
+    50% {
+        box-shadow: 0 2px 0 red;
+    }
+    100% {
+        box-shadow: 0 2px 0 steelblue;
+    }
+}
+
+.cityContent {
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 50px 20px;
+}
+
+.cityContent>p a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #0076C0;
+}
+
+
+/*second content */
+
+.contentTwo {
+    background-color: #fff;
+    margin: 100px 200px;
+    box-shadow: 1px 1px 1px black;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+.contentTwo{
+  background-color: #fff;
+  margin: 0;
+  box-shadow: 1px 1px 1px black;
+  padding-bottom: 100px;
+}
+
+.contentTwo>section {
+    margin: 0;
+    text-align: left;
+}
+.contentTwo>section ul li {
+    list-style: none;
+    margin-right: 0;
+}
+
+table {
+    padding: 0;
+    margin: 0;
+}
+}
+
+.contentTwo>section {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.contentTwo>section ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.contentTwo>section ul li span {
+    margin-left: -30px;
+    padding-right: 10px;
+}
+
+table thead th {
+    text-shadow: none;
+    color: #fff;
+}
+
+table thead th:first-child {
+    background-color: #444;
+    width: 200px;
+    border: 1px solid #444;
+    text-shadow: 1px 1px 1px black;
+}
+
+table thead th:last-child {
+    background-color: #0b72bf;
+    width: 200px;
+    border: 1px solid #0b72bf;
+    text-shadow: 1px 1px 1px black;
+}
+
+table {
+    border-spacing: 10px;
+    margin-left: 200px;
+}
+
+table tr td:nth-child(1) {
+    background-color: #777;
+    width: 200px;
+    text-shadow: 1.5px 1.5px 1.5px black;
+    border: 1px solid #777;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+    overflow: hidden;
+}
+
+table tr td:nth-child(2) {
+    background-color: #54a3df;
+    width: 200px;
+    text-shadow: 1px 1px 1px black;
+    border: 1px solid #54a3df;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+}
+
+table tr td:nth-child(1):hover, table tr td:nth-child(2):hover {
+    transform: scale(1.3);
+}
+
+
+/*section three*/
+
+.contentThree {
+    background-color: #fff;
+    margin: 100px 200px;
+    padding-bottom: 50px;
+    box-shadow: 1px 1px 1px black;
+}
+
+@media(max-width: 900px) {
+
+}
+.Bridge, .Tunnel, .Tower {
+    -webkit-display: flex;
+    -moz-display: flex;
+    display: flex;
+    height: 80%;
+    width: auto;
+}
+
+
+/* CONTENT */
+
+h4 {
+    text-align: center;
+    font-size: 16pt;
+    color: #fff;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(76, 144, 177, 0.7);
+    font-family: sans-serif;
+    position: relative;
+    clear: both;
+    padding: 0;
+}
+
+.swingBridgeFacts, .TowerFacts {
+    font-family: sans-serif;
+    line-height: 1.5;
+    float: right;
+    margin: 130px 0;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+}
+
+.tunnelBuildingFacts {
+    font-family: sans-serif;
+    line-height: 1.5;
+    float: right;
+    margin: 130px 0;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+    -webkit-order: 2;
+    -moz-order: 2;
+    order: 2;
+}
+
+
+/* IMAGES */
+
+.swingBridgeIMG, .clockTowerIMG {
+    width: 100%;
+    height: 100%;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+}
+
+.tunnelBuildingIMG {
+    width: 100%;
+    height: 100%;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+    -webkit-order: 1;
+    -moz-order: 1;
+    order: 1;
+}
+
+.swingBridgeIMG>img, .tunnelBuildingIMG>img, .clockTowerIMG>img {
+    width: 70%;
+    height: 60%;
+    margin: 50px 50px;
+    box-shadow: 2px 2px 2px black;
+    animation: colorSwitch 5s ease-in-out infinite;
+}
+
+@keyframes colorSwitch {
+    0% {
+        box-shadow: 2px 2px 2px black;
+    }
+    50% {
+        box-shadow: 2px 2px 2px grey;
+    }
+    75% {
+        box-shadow: 2px 2px 2px darkgrey;
+    }
+    100% {
+        box-shadow: 2px 2px 2px black;
+    }
+}
